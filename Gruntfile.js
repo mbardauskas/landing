@@ -12,13 +12,25 @@ module.exports = function(grunt) {
 	var config = {
 		source: 'src',
 		temp: '.temp',
-		dist: 'dist',
+		dist: 'dist'
 	};
 
 	grunt.initConfig({
 
 		// Project settings
 		config: config,
+
+		watch: {
+			css: {
+				files: ["<%= config.source %>/styles/*.scss"],
+				tasks: ['updatestyles'],
+				options: {
+					livereload: {
+						port: 9099
+					}
+				}
+			}
+		},
 
 		sass: {
 			dist: {
@@ -119,6 +131,15 @@ module.exports = function(grunt) {
 						'<%= config.temp %>'
 					]
 				}]
+			},
+			styles: {
+				files: [{
+					dot: true,
+					src: [
+						'<%= config.temp %>/styles/*',
+						'<%= config.dist %>/styles/*'
+					]
+				}]
 			}
 		},
 
@@ -142,6 +163,13 @@ module.exports = function(grunt) {
 		'copy:dist',
 		'concat:dist',
 		'autoprefixer',
+		'cssmin:dist'
+	]);
+
+	grunt.registerTask('updatestyles', [
+		'clean:styles',
+		'sass:dist',
+		'concat:dist',
 		'cssmin:dist'
 	]);
 
