@@ -1,3 +1,5 @@
+@import "mixins";
+
 .gold-point {
 	position: fixed;
 	left: 38.195%;
@@ -21,7 +23,7 @@
 }
 
 .gold-point:hover .master__circle {
-	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	@include GBoxShadow(1);
 }
 
 .gold-point:hover .slave--right .slave__circle {
