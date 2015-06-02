@@ -1,0 +1,33 @@
+.gold-point {
+	position: fixed;
+	left: 38.195%;
+	top: 38.195%;
+}
+
+.gold-point:hover {
+	right: 38.195%;
+	bottom: 38.195%;
+}
+
+.gold-point:after {
+	display: block;
+	content: "";
+	position: absolute;
+	top: -7.5vw;
+	left: -7.5vw;
+	z-index: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.gold-point:hover .master__circle {
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.gold-point:hover .slave--right .slave__circle {
+	transform: translateX(10vw) translateY(-50%);
+}
+
+.gold-point:hover .slave--bottom .slave__circle {
+	transform: translateY(10vw) translateX(-50%);
+}

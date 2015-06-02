@@ -1,0 +1,15 @@
+.master {
+	height: 0;
+}
+
+.master__circle {
+	background-color: #fafafa;
+	border-radius: 10vw;
+	position: absolute;
+	height: 15vw;
+	width: 15vw;
+	transform: translateX(-50%) translateY(-50%);
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	transition: width 0.2s, height 0.2s, box-shadow 0.2s;
+	z-index: 5;
+}
