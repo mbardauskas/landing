@@ -2,10 +2,10 @@
 
 .slave__circle {
 	background-color: #fafafa;
-	border-radius: 10vw;
+	border-radius: 15vw;
 	position: absolute;
-	height: 5vw;
-	width: 5vw;
+	height: 14.5vw;
+	width: 14.5vw;
 	@include GBoxShadow(1);
 	transform: translateX(-50%) translateY(-50%);
 	transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;

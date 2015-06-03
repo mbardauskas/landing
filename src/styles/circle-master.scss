@@ -6,10 +6,10 @@
 
 .master__circle {
 	background-color: #fafafa;
-	border-radius: 10vw;
+	border-radius: 24vw;
 	position: absolute;
-	height: 15vw;
-	width: 15vw;
+	height: 23.5vw;
+	width: 23.5vw;
 	@include GBoxShadow(2);
 	transform: translateX(-50%) translateY(-50%);
 	transition: width 0.2s, height 0.2s, box-shadow 0.2s;
