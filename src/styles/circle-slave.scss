@@ -12,6 +12,7 @@ $radius: $diameter/2;
 	margin-top: -$radius;
 	margin-left: -$radius;
 	transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+	transition-delay: 0.05s;
 	z-index: 4;
 
 	a {

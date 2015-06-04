@@ -4,6 +4,7 @@
 $outerCircleRadius: 30vh;
 
 .gold-point {
+	font-family: "Arial", sans-serif;
 	position: fixed;
 	left: 38.195%;
 	top: 38.195%;
@@ -27,6 +28,7 @@ $outerCircleRadius: 30vh;
 
 .gold-point:hover .master__circle {
 	@include GBoxShadow(1);
+	background-color: #9e9e9e;
 
 	img {
 		transform: scale(1);
