@@ -72,6 +72,14 @@ module.exports = function(grunt) {
 						src: [
 							'**/*.html'
 						]
+					},
+					{
+						expand: true,
+						cwd: '<%= config.source %>/images/',
+						dest: '<%= config.dist %>/images/',
+						src: [
+							'*.svg'
+						]
 					}
 				]
 			},
