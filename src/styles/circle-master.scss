@@ -28,6 +28,7 @@ $radius: $diameter/2;
 	margin-left: -$radius;
 	@include GBoxShadow(4);
 	transition: width 0.2s, height 0.2s, box-shadow 0.2s, background-color 0.2s;
+	animation: shadow-change 2s infinite linear;
 	z-index: 5;
 	overflow: hidden;
 
@@ -41,4 +42,17 @@ $radius: $diameter/2;
 		z-index: 5;
 	}
 
+}
+
+
+@keyframes shadow-change {
+	0% {
+		@include GBoxShadow(3);
+	}
+	50% {
+		@include GBoxShadow(1)
+	}
+	100% {
+		@include GBoxShadow(3);
+	}
 }
