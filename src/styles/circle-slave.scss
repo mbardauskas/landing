@@ -1,10 +1,10 @@
 @import "mixins";
-$diameter: 14.5vw;
+$diameter: 14.5vh;
 $radius: $diameter/2;
 
 .slave__circle {
 	background-color: #fafafa;
-	border-radius: 15vw;
+	border-radius: $radius;
 	position: absolute;
 	height: $diameter;
 	width: $diameter;
