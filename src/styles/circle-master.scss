@@ -50,7 +50,7 @@ $radius: $diameter/2;
 		@include GBoxShadow(3);
 	}
 	50% {
-		@include GBoxShadow(1)
+		@include GBoxShadow(2)
 	}
 	100% {
 		@include GBoxShadow(3);

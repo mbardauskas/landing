@@ -36,6 +36,35 @@ $outerCircleRadius: 30vh;
 	}
 }
 
+.gold-point {
+	$foldedRadius: 7vh;
+
+	.slave__circle--1 {
+		$angle: -25;
+		transform: getTransformCoordinates($angle, $foldedRadius);
+	}
+
+	.slave__circle--2 {
+		$angle: 10;
+		transform: getTransformCoordinates($angle, $foldedRadius);
+	}
+
+	.slave__circle--3 {
+		$angle: 45;
+		transform: getTransformCoordinates($angle, $foldedRadius);
+	}
+
+	.slave__circle--4 {
+		$angle: 80;
+		transform: getTransformCoordinates($angle, $foldedRadius);
+	}
+
+	.slave__circle--5 {
+		$angle: 115;
+		transform: getTransformCoordinates($angle, $foldedRadius);
+	}
+}
+
 .gold-point:hover {
 	.slave__circle--1 {
 		$angle: -25;
