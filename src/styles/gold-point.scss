@@ -27,9 +27,9 @@
 }
 
 .gold-point:hover .slave--right .slave__circle {
-	transform: translateX(19vw) translateY(-50%);
+	transform: translateX(19vw);
 }
 
 .gold-point:hover .slave--bottom .slave__circle {
-	transform: translateY(19vw) translateX(-50%);
+	transform: translateY(19vw);
 }
