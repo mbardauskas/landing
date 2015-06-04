@@ -1,4 +1,7 @@
 @import "mixins";
+@import "functions";
+
+$outerCircleRadius: 30vw;
 
 .gold-point {
 	position: fixed;
@@ -26,10 +29,29 @@
 	@include GBoxShadow(1);
 }
 
-.gold-point:hover .slave--right .slave__circle {
-	transform: translateX(19vw);
-}
+.gold-point:hover {
+	.slave__circle--1 {
+		$angle: -25;
+		transform: getTransformCoordinates($angle, $outerCircleRadius);
+	}
 
-.gold-point:hover .slave--bottom .slave__circle {
-	transform: translateY(19vw);
+	.slave__circle--2 {
+		$angle: 10;
+		transform: getTransformCoordinates($angle, $outerCircleRadius);
+	}
+
+	.slave__circle--3 {
+		$angle: 45;
+		transform: getTransformCoordinates($angle, $outerCircleRadius);
+	}
+
+	.slave__circle--4 {
+		$angle: 80;
+		transform: getTransformCoordinates($angle, $outerCircleRadius);
+	}
+
+	.slave__circle--5 {
+		$angle: 115;
+		transform: getTransformCoordinates($angle, $outerCircleRadius);
+	}
 }

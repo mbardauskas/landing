@@ -10,3 +10,9 @@
 @function getCircleY($angle, $radius, $base: 0) {
 	@return $base + $radius * sin(rad($angle) * pi() / 180);
 }
+
+@function getTransformCoordinates($angle, $radius, $base: 0) {
+	$translateX: getCircleX($angle, $radius, $base);
+	$translateY: getCircleY($angle, $radius, $base);
+	@return translateX($translateX) translateY($translateY);
+}
