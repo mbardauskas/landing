@@ -1,0 +1,12 @@
+@import "trigonometry";
+
+// double x = x0 + r * Math.Cos(theta * Math.PI / 180);
+// double y = y0 + r * Math.Sin(theta * Math.PI / 180);
+
+@function getCircleX($angle, $radius, $base: 0) {
+	@return $base + $radius * cos(rad($angle) * pi() / 180);
+}
+
+@function getCircleY($angle, $radius, $base: 0) {
+	@return $base + $radius * sin(rad($angle) * pi() / 180);
+}
