@@ -18,4 +18,14 @@ $radius: $diameter/2;
 	@include GBoxShadow(4);
 	transition: width 0.2s, height 0.2s, box-shadow 0.2s;
 	z-index: 5;
+	overflow: hidden;
+
+	img {
+		border-radius: $radius;
+		display: block;
+		max-width: 100%;
+		transform: scale(0);
+		transition: transform 0.1s;
+	}
+
 }

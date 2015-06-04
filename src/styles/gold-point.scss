@@ -26,7 +26,11 @@ $outerCircleRadius: 30vh;
 }
 
 .gold-point:hover .master__circle {
-	@include GBoxShadow(2);
+	@include GBoxShadow(1);
+
+	img {
+		transform: scale(1);
+	}
 }
 
 .gold-point:hover {
