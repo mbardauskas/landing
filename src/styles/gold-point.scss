@@ -18,15 +18,15 @@ $outerCircleRadius: 30vh;
 	display: block;
 	content: "";
 	position: absolute;
-	top: -7.5vw;
-	left: -7.5vw;
+	top: -20vh;
+	left: -20vh;
 	z-index: 0;
-	right: 0;
-	bottom: 0;
+	right: -($outerCircleRadius/2);
+	bottom: -($outerCircleRadius/2);
 }
 
 .gold-point:hover .master__circle {
-	@include GBoxShadow(1);
+	@include GBoxShadow(2);
 }
 
 .gold-point:hover {
